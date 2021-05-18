@@ -1,3 +1,3 @@
 import { port } from '../../examples/server/config'
 
-export const jsUrl = `http://localhost:${port}/index.html`
+export const htmlUrl = `http://localhost:${port}/index.html`
