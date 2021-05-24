@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const gitRootDir = __dirname + '/../'
-console.log('process.env.HUSKY_GIT_PARAMS', process.env.HUSKY_GIT_PARAMS)
+console.log('process.env.HUSKY_GIT_PARAMS', process.env.$1)
 if (process.env.HUSKY_GIT_PARAMS) {
   const messageFile = path.normalize(gitRootDir + '/' + process.env.HUSKY_GIT_PARAMS.split(' ')[0])
   let commitMessage = `\nproject commit:\n`
