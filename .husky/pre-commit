@@ -1,5 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 # 当commit影响的文件是package.version时，应该自动执行 npm run initChangelog
+npm run initChangelog
+git add .
 npx lint-staged
 
