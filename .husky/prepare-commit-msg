@@ -2,4 +2,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 # node script/before-msg-commit.js --edit $1
-echo $1
+echo "$1 here"
