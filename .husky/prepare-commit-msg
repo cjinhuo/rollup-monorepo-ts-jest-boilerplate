@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-node script/before-msg-commit.js $1
+node script/before-msg-commit.js --edit $1
