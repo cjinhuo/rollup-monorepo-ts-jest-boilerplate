@@ -1,5 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-# node script/before-msg-commit.js --edit $1
 echo "$1 $2 $3 $4 here"
+node script/before-msg-commit.js
