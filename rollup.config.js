@@ -14,6 +14,8 @@ if (!process.env.TARGET) {
   throw new Error('TARGET package must be specified')
 }
 const githubName = '@cjinhuo'
+// major name
+const M = '@boilerplate'
 // 是否生成声明文件
 const isDeclaration = process.env.TYPES !== 'false'
 // eslint-disable-next-line @typescript-eslint/no-var-requires
@@ -25,8 +27,6 @@ const packageDir = path.resolve(packagesDir, process.env.TARGET)
 const packageDirDist = process.env.LOCALDIR === 'undefined' ? `${packageDir}/dist` : process.env.LOCALDIR
 const name = path.basename(packageDir)
 // const pathResolve = (p) => path.resolve(packageDir, p)
-// major name
-const M = '@boilerplate'
 const packageDirs = fs.readdirSync(packagesDir)
 const paths = {}
 packageDirs.forEach((dir) => {

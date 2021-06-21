@@ -14,9 +14,8 @@
     "test": " npm run unit && npm run e2e",
     "format": "prettier --write -,-parser typescript \"packages/**/*.ts?(x)\"",
     "format:package": "prettier --write \"packages/**/package.json\"",
-    "commit": "git cz",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
-    "initChangelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "commit": "git add . && git cz",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 1"
   },
   "repository": {
     "type": "git",
